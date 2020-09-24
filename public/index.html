@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sms</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center m-5">Send sms</h1>
+      <form
+        class="mt-2"
+        id="form-sms"
+        method="POST"
+        action="#"
+        onsubmit="sendMessage"
+      >
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            id="sid"
+            name="sid"
+            placeholder="SID"
+          />
+          <small id="" class="form-text text-muted">twilio id</small>
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            id="token"
+            name="token"
+            placeholder="TOKEN"
+          />
+          <small id="" class="form-text text-muted">twilio token</small>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="fromNumber"
+            name="fromNumber"
+            placeholder="FROM NUMBER"
+          />
+          <small id="" class="form-text text-muted">from number</small>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="clientName"
+            name="clientName"
+            placeholder="CLIENT NAME"
+          />
+          <small id="" class="form-text text-muted">client name</small>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="clientPhone"
+            name="clientNumber"
+            placeholder="CLIENT PHONE NUMBER"
+          />
+          <small id="" class="form-text text-muted">client phone</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="3"
+            name="message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
